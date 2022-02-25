@@ -1,38 +1,126 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  color: #141e27;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-header {
+  background-color: #b2b1b9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  position: relative;
+}
+
+.list-header_reset-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: #da1212;
+}
+
+.list-content_tool {
+  position: relative;
+}
+
+.list-content_input {
+  padding: 1rem;
+  border: none;
+  width: -webkit-fill-available;
+}
+
+.list-content_search {
+  position: absolute;
+  padding: 0.55rem 0.5rem 0.45rem 0.5rem;
+  right: 2.7rem;
+}
+
+.list-content_search-clr-btn {
+  position: absolute;
+  padding: 0.55rem 0.5rem 0.45rem 0.5rem;
+  right: 0;
+}
+
+.list-content_search-img {
+  width: 1.5rem;
+}
+
+/* Styles for empty list component */
+
+.records-empty {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.records-empty_img {
+  width: 3rem;
+}
+
+/* Styles for friends preview card */
+
+.preview-card {
+  padding: 1rem;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.preview-card_title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.preview-card_subTitle {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.preview-card_b1-fav {
+  position: absolute;
+  right: 5rem;
+  top: 1.1rem;
+}
+
+.preview-card_b1-fav-img {
+  width: 1.5rem;
+  margin: 0.4rem 0.1rem 0.2rem;
+}
+
+.preview-card_b2-del {
+  position: absolute;
+  right: 1rem;
+  top: 1.1rem;
+}
+
+.preview-card_b2-del-img {
+  width: 1.5rem;
+  margin: 0.4rem 0 0.2rem;
+}
+
+/* Style for pagination component */
+
+.pagination-wrapper {
+  padding: 1rem;
+}
+
+.page-button {
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.6rem;
+}
+
+.page-size-changer {
+  padding: 0.3rem 0.2rem;
+  margin-right: 0.6rem;
 }
